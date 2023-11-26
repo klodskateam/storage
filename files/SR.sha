@@ -1,0 +1,62 @@
+Make(delphi)
+ver(4.05 build 186)
+Add(SimpleForm,2953706,21,168)
+{
+ Width=128
+ Height=87
+ Caption="ScreenResizer"
+ link(onCreate,4577341:doEvent1,[(69,174)(69,195)])
+}
+Add(Edit,8719228,133,280)
+{
+ Width=65
+ Text=""
+ link(Str,9131823:Width,[(139,289)(265,289)])
+}
+Add(Edit,11279185,154,231)
+{
+ Top=20
+ Width=65
+ Text=""
+ link(Str,9131823:Height,[(160,229)(272,229)])
+}
+Add(Button,7117456,126,154)
+{
+ Left=65
+ Height=40
+ Caption="Сменить"
+ link(onClick,9131823:doResolution,[(208,160)(208,167)])
+}
+Add(Screen,9131823,259,161)
+{
+ link(X,8719228:Text,[(265,149)(202,149)(202,324)(139,324)])
+ link(Y,11279185:Text,[(272,149)(216,149)(216,275)(160,275)])
+}
+Add(Hub,4577341,84,189)
+{
+ link(onEvent1,8719228:doText,[(108,195)(108,286)])
+ link(onEvent2,11279185:doText,[(126,202)(126,237)])
+}
+Add(Button,11511002,35,357)
+{
+ Top=40
+ Caption="CLICK ME!"
+ link(onClick,14136338:doMessage,[])
+}
+Add(Button,9876400,35,399)
+{
+ Left=65
+ Top=40
+ Caption="About"
+ link(onClick,6558974:doMessage,[])
+}
+Add(Message,14136338,140,357)
+{
+ Message="Использывать на свой страх и риск!!!!!!!!!!!!!!"
+ Caption="Использывать на свой страх и риск!!!!!!!!!!!!!!"
+}
+Add(Message,6558974,140,399)
+{
+ Message="By KlodskaTeam | klodskateam.rf.gd"
+ Caption="sus"
+}
